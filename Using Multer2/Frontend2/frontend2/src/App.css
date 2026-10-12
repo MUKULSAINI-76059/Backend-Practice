@@ -1,0 +1,89 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, #root,body{
+  width: 100%;
+  height: 100%;
+}
+
+.create-post-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f2f5;
+  gap: 20px;
+}
+.create-post-section form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0);
+  width: 300px;
+}
+
+.create-post-section input,text{
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.create-post-section button{
+  padding: 10px 20px;
+  background-color: #4caf50;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.feed-section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+  width: 100%;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.post-card{
+  background-color: white;
+  padding: 20px;
+  padding-right: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.post-card h3{
+  margin-bottom: 10px;
+}
+
+.post-card img{
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  height: 300px;
+  width: 97%;
+  display: block;
+}
+
+.feed-section p{
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  padding-top: 8px;
+}

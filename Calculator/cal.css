@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1d1b14;
+}
+
+.container{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 40vh;
+}
+
+.container h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.1rem;
+}
+
+form,select, button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input{
+    border: 1px solid lightgrey;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.select-container img{
+     max-width: 2rem;
+}
+
+.select-container {
+    display: flex;
+    width: 6rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid lightgrey;
+}
+
+.dropdown i{
+    font-size: 1.5rem;
+    margin-top: 1ren;
+}
+
+.select-container select{
+    font-size: 1.1rem;
+    width: auto;
+}
+
+.msg{
+    margin: 1em 0 2rem 0;
+}
+
+form button{
+    background-color: #a44d98;
+    font-size: 1.15rem;
+    color: white;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.amount {
+    margin-top: 1.6rem;
+}
+
+.amount input{
+    height: 3rem;
+}
+
+button:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+     animation: zoomEffect 4s ease-in-out;
+}
+
+
+

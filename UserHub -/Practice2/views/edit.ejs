@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    
+</head>
+<body >
+    <div class="main w-full h-screen bg-zinc-900 p-10 text-white ">
+        <a href="/" class="text-blue-500 inline-block mb-10 hover:text-blue-400 transition-colors duration-300">Go Back To Home</a>
+        <form class="max-w-sm m-auto " action="/edit/<%=user._id %>" method="POST">
+                <h1 class="w-full ml-10 font-serif text-4xl font-semibold mb-10 sm:text-none
+           md:text-4xl
+           lg:text-5xl">Update <%= user.name %></h1>
+                <input class="block px-6 py-3 bg-zinc-800 w-full rounded-md outline-none mt-2 mb-3" type="text" placeholder="New Name" name="name" value="<%= user.name %>">
+                <input class="block px-6 py-3 bg-zinc-800  w-full  rounded-md outline-none mt-2 mb-3" type="text" placeholder="New Email" name="email" value="<%= user.email %>">
+                <input class="block px-6 py-3 bg-zinc-800  w-full rounded-md outline-none mt-2" type="text" placeholder="New Image URL" name="image" value="<%= user.image %>">
+                <input type="submit" class="mt-7  bg-yellow-600 text-white w-full py-2 rounded-md hover:scale-105 transition-all duration-300 ease-out" value="Update User">
+        </form>
+    </div>
+</body>
+</html>

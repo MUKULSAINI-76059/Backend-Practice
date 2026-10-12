@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full min-h-screen bg-zinc-800 p-10 text-white">
+        <div class="nav mb-5">
+            <a class="text-blue-500 hover:text-blue-400 transition-colors duration-400" href="/read">View All Users</a>
+        </div>
+        <h1 class="text-3xl tracking-tighter mb-12 font-serif text-3xl font-semibold">Create User</h1>
+        <form action="/create" method="POST" class=" p-9  pl-1 border border-white rounded-2xl text-center flex justify-evenly items-center">
+            <input class =" px-4 py-2 border-2 border-zinc-800 outline-none bg-transparent border border-white rounded-md" name="name" type="text" placeholder="Name">
+            <input class =" px-4 py-2 border-2 border-zinc-800 outline-none bg-transparent border border-white rounded-md" name="email" type="text" placeholder="Email">
+            <input class =" px-4 py-2 border-2 border-zinc-800 outline-none bg-transparent border border-white rounded-md" name="image" type="text" placeholder="Image URL">
+            <input class="px-5 py-2 bg-blue-500 rounded-lg ml-3  hover:scale-110 transition-transform duration-200" type="submit" value="Create">
+            <button class="px-5 py-2 bg-red-500 rounded-lg ml-3 hover:scale-110 transition-transform duration-200 ml-10" type="reset">Clear</button>
+        </form>
+    </div>
+</body>
+</html>
